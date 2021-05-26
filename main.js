@@ -21,17 +21,17 @@ $(document).ready(function(){
                     $(`[value=${current}]`).parent().css('visibility', 'hidden');
                     arrOpen = [];
                     arrCheck = [];
-                }, 1200)
+                }, 800)
             }else{
                 setTimeout(function(){
-                    console.log(arrOpen);
+                    // console.log(arrOpen);
                     for(let j = 0; j < arrCheck.length; j++){
                         $(arrOpen[j]).parent().css('background-color', '#ccc');
-                        console.log(arrOpen[j]);
+                        // console.log(arrOpen[j]);
                     }
                     arrOpen = [];
                     arrCheck = [];
-                }, 1200)
+                }, 800)
             }
         }
     })
